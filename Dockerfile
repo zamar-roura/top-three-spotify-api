@@ -9,5 +9,6 @@ RUN python3 get-pip.py
 COPY requirements.txt /requirements.txt
 COPY three_top_three.py /three_top_three.py
 COPY open.py /open.py
+COPY .cache /.cache
 RUN python3 -m pip install -r /requirements.txt
 CMD ["python3","/three_top_three.py"]
