@@ -17,11 +17,10 @@ PLAYLISTS = [ZAMAR_PLAYLIST, PEREZ_PLAYLIST, BERBEL_PLAYLIST]
 
 THREE_TOP_THREE_PLAYLIST = "3ykmrTYQ2CcxqeKD6EmEfh"
 
-
 class ThreeTopThreeManager:
     def __init__(self) -> None:
         scope = 'playlist-modify-public'
-        self.sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope,open_browser=False))
+        self.sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
 
     def playlist_contains_track(self, track_id, playlist_id):
         """
@@ -77,4 +76,3 @@ class ThreeTopThreeManager:
 if __name__ == "__main__":
     a = ThreeTopThreeManager()
     a.insert_three_top_three()
-

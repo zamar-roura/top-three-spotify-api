@@ -1,3 +1,4 @@
+anyio==3.5.0
 argcomplete==1.12.3
 autopep8==1.6.0
 backcall==0.2.0
@@ -8,6 +9,9 @@ debugpy==1.5.1
 decorator==5.1.0
 entrypoints==0.3
 Flask==2.0.2
+h11==0.12.0
+httpcore==0.14.7
+httpx==0.21.3
 idna==3.3
 importlib-metadata==4.8.2
 ipykernel==6.6.0
@@ -30,8 +34,11 @@ Pygments==2.10.0
 python-dateutil==2.8.2
 pyzmq==22.3.0
 requests==2.26.0
+rfc3986==1.5.0
 six==1.16.0
+sniffio==1.2.0
 spotipy==2.19.0
+tekore==4.2.0
 toml==0.10.2
 tornado==6.1
 traitlets==5.1.1
