@@ -2,7 +2,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import logging
 logging.basicConfig(filename='songs.log', level=logging.INFO)
-
+import time
 # CONFIG FILES
 
 
@@ -20,7 +20,7 @@ THREE_TOP_THREE_PLAYLIST = "3ykmrTYQ2CcxqeKD6EmEfh"
 class ThreeTopThreeManager:
     def __init__(self) -> None:
         scope = 'playlist-modify-public'
-        self.sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
+        self.sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope,open_browser=False))
 
     def playlist_contains_track(self, track_id, playlist_id):
         """
@@ -75,4 +75,6 @@ class ThreeTopThreeManager:
 
 if __name__ == "__main__":
     a = ThreeTopThreeManager()
-    a.insert_three_top_three()
+    while(True):
+        a.insert_three_top_three()
+        time.sleep(3600)
