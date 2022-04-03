@@ -5,4 +5,4 @@ COPY requirements.txt /requirements.txt
 COPY three_top_three.py /three_top_three.py
 RUN python3 -m pip install -r /requirements.txt
 
-CMD ["python3","/three_top_three.py"]
+CMD ["bash"]
