@@ -7,7 +7,7 @@ SPOTIPY_REDIRECT_URI='https://zamar-roura.com'
 
 
 
-docker run -e SPOTIPY_CLIENT_ID=a151833fa5834cecaded3ce6cbd3f906 -e SPOTIPY_CLIENT_SECRET=5ea4b9377f3d49db91379181e016cbac -e SPOTIPY_REDIRECT_URI=http://zamar-roura.com -d topthreespotifyapi tail -f /dev/null
+docker run -e SPOTIPY_CLIENT_ID="CLIENT_ID" -e SPOTIPY_CLIENT_SECRET="SPOTIFY_CLIENT_SECRET" -e SPOTIPY_REDIRECT_URI="REDIRECT_URI"-d topthreespotifyapi tail -f /dev/null
 
 Run python through inside docker first and make code accepted.
     
